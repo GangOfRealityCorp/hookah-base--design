@@ -37,6 +37,7 @@
     }
   }
 }
+
 //--------VARS----------
 $screen-xs: 640px;
 $screen-sm: 750px;
@@ -80,6 +81,7 @@ html, body {
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  min-width: 1024px;
 }
 
 input, button, textarea {
@@ -155,7 +157,14 @@ h1, h2, h3, h4, h5, h6 {
           display: flex;
           margin: auto;
           flex-direction: column;
-
+          a{
+            margin-top: 5px;
+            text-align: end;
+            color:white;
+            &:hover{
+              color: silver;
+            }
+          }
           input {
             height: 40px;
             font-size: 20px;
@@ -191,23 +200,49 @@ h1, h2, h3, h4, h5, h6 {
 
   }
 }
+
 .header_content {
-  position: relative;
-  img{
+  background-color: #4a76a8;
+  display: flex;
+  justify-content: center;
+
+  .header_content_container {
+    display: flex;
+    justify-content: space-between;
     @include media(desctop) {
-      margin-left: 180px;
+      width: 1024px;
     }
     @include media(large) {
-      margin-left: 450px;
+      width: 1024px;
     }
-    position: absolute;
-    display: inline-block;
-  }
-  .register_form_title {
-    color: gainsboro;
-    background-color: #4a76a8;
-    text-align: center;
-    font-size: 100px;
-    padding-bottom: 10px;
+
+    .register_form_title {
+      color: gainsboro;
+      text-align: center;
+      font-size: 100px;
+      padding-bottom: 10px;
+      margin-left: 100px;
+    }
+
+    .btn_header {
+      margin-top: 20px;
+      button {
+        &:hover{
+          background-color: #7996b2;
+        }
+      span{
+        font-size: 20px;
+        width: 120px;
+      }
+        background-color: #5c9ce6;
+        border: none;
+        color: gainsboro;
+        padding: 20px;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 2px;
+        border-radius: 5%;
+      }
+    }
   }
 }
