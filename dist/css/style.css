@@ -1,0 +1,184 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+
+.register_form {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #dfe6ed;
+}
+
+.register_form .register_form_container {
+  display: flex;
+}
+
+.register_form .register_form_container form {
+  width: 1024px;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.register_form .register_form_container form .input_container {
+  background-color: #4a76a8;
+  border-radius: 10%;
+  width: 50%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.register_form .register_form_container form .input_container .input_box {
+  padding-top: 40px;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+}
+
+.register_form .register_form_container form .input_container .input_box input {
+  height: 40px;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.register_form .register_form_container .btn_box {
+  margin: auto;
+}
+
+.register_form .register_form_container .btn_box .btn {
+  background-color: #5c9ce6;
+  width: 120px;
+  border: none;
+  color: gainsboro;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 50px;
+  margin: 4px 2px;
+  border-radius: 50%;
+}
+
+.register_form .register_form_container .btn_box .btn:hover {
+  background-color: #7996b2;
+}
+
+.header_content {
+  position: relative;
+}
+
+.header_content img {
+  position: absolute;
+  display: inline-block;
+}
+
+.header_content .register_form_title {
+  color: gainsboro;
+  background-color: #4a76a8;
+  text-align: center;
+  font-size: 100px;
+  padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 1980px) {
+  .header_content img {
+    margin-left: 450px;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .header_content img {
+    margin-left: 180px;
+  }
+}
